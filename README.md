@@ -55,19 +55,38 @@ processing phase.
 * The first step is to extract the data by entering "1" when prompted to initiate the
 extraction process.
   * Enter the corresponding number to activate each step in order
+  * If the file already exists then the contents will be written to a new dataframe
+  * If the file does not exist then it will be downloaded directly from the website
 * The second step is to profile the data
+  * Below shows an example of the profile report which can be opened using a web browser
+  of your choosing
+  ![profil report img](snippets/ydata_profile_report.png)
 * The third step is to transform the data
+  * This process currently only involves removing empty rows before exporting the data
+for modeling
 * The fourth step is to load the data
-* Once all files are viewed, copied, etc. the user can type "5" to remove the temporary
-files and exit the program.
+  * The data is written to separate csv files with selected columns for visualization
+* Once all files are viewed, copied, etc. the user can either type "5" to remove the temporary
+files or type "6" to end the program and retain the files
 * The next steps involve importing the csv files into Microsoft Power BI or the user's
 desired data modeling application.
 * This snippet shows the star schema and relationships between the fact and dimension
 tables
 ![star schema structure img](snippets/star_schema_structure.png)
-![incidents by description](snippets/incidents_by_description.png)
-![weapon types used](snippets/weapon_types_used.png)
-![victim sex percentage](snippets/victim_sex_percentage.png)
+* The reports are located below
+* Each report visualizes specific trends in the data
+![la crime stats reports pdf](reports/la_crime_stats_reports.pdf)
+* At this point there are currently four report items:
+  * Victim Sex Trends
+    * Intended to show the number of victims over time by sex
+  * Weapon Types Used
+    * Intended to show the types of weapons used throughout the dataset timeframe
+  * Total Incidents by Description
+    * Intended to show the types of crimes committed within the dataset timeframe
+  * Count of Crime by Area
+    * Intended to show the concentration of crimes by area using longitude, latitude,
+and a map of Los Angeles as the backdrop of a scatterplot
+
 ## Authors
 
 Alexander Dodd
