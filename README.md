@@ -51,7 +51,7 @@ python src/main.py
 ```
 * The program will present a menu to prompt users to view each step of the data
 processing phase.
-![data modeling project menu img](snippets/data_modeling_menu.png)
+![data modeling project menu img](docs/snippets/data_modeling_menu.png)
 * The first step is to extract the data by entering "1" when prompted to initiate the
 extraction process.
   * Enter the corresponding number to activate each step in order
@@ -60,7 +60,7 @@ extraction process.
 * The second step is to profile the data
   * Below shows an example of the profile report which can be opened using a web browser
   of your choosing
-  ![profil report img](snippets/ydata_profile_report.png)
+  ![profil report img](docs/snippets/ydata_profile_report.png)
 * The third step is to transform the data
   * This process currently only involves removing empty rows before exporting the data
 for modeling
@@ -72,10 +72,9 @@ files or type "6" to end the program and retain the files
 desired data modeling application.
 * This snippet shows the star schema and relationships between the fact and dimension
 tables
-![star schema structure img](snippets/star_schema_structure.png)
+![star schema structure img](docs/snippets/star_schema_structure.png)
 * The reports are located below
 * Each report visualizes specific trends in the data
-![la crime stats reports pdf](reports/la_crime_stats_reports.pdf)
 * At this point there are currently four report items:
   * Victim Sex Trends
     * Intended to show the number of victims over time by sex
@@ -93,12 +92,9 @@ Alexander Dodd
 [@linkedin.com](www.linkedin.com/in/alexander-j-dodd93)
 
 ## Version History
-
-* 1.1
-    * Various bug fixes, restructuring, and optimizations
-    * See [commit changes](https://github.com/AbsoluteAI/data_prep_project/commits/master/) or See [release history]()
 * 1.0
     * Initial Release
+    *  See [commit changes](https://github.com/AbsoluteAI/data_prep_project/commits/master/) or See [release history]()
 
 ## License
 
